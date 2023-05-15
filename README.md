@@ -2,5 +2,5 @@
 
 ## To start project 
 `ng serve -o`
-## to open server of Rest API
+## to open server
 `npm run json`
