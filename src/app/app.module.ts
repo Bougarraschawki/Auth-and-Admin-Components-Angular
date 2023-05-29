@@ -8,6 +8,7 @@ import { StoreComponent } from './store/store.component';
 import { CheckoutComponent } from './store/checkout/checkout.component';
 import { CartDetailComponent } from './store/cartDetail/cartDetail.component';
 import { StoreFirstGuard } from './storeFirst.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -30,6 +31,7 @@ import { StoreFirstGuard } from './storeFirst.guard';
       },
       { path: '**', redirectTo: '/store'},
     ]),
+    BrowserAnimationsModule,
   ],
   providers: [StoreFirstGuard],
   bootstrap: [AppComponent]

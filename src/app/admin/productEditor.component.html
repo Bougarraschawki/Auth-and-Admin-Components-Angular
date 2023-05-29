@@ -1,0 +1,15 @@
+<h3 class="heading">{{editing ? 'Edit': 'create'}} Product</h3>
+<form (ngSubmit)="save()">
+    <mat-form-field *ngIf="editing">
+        <mat-label>ID</mat-label>
+        <input matInput name="id" [(ngModel)]="product.id" disabled>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput name="name" [(ngModel)]="product.name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Category</mat-label>
+        <input matInput name="category" [(ngModel)]="product.category">
+    </mat-form-field>
+</form>
